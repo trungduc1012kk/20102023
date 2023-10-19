@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat:ital,wght@1,600&display=swap');
+
+body {
+    background-image: url(/assets/images/bg.png);
+    background-position: center;
+    background-size: contain;
+    background-color: #FFF2F7;
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+.banner {
+    position: relative;
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .image-item {
+    width: 360px;
+    height: 630px;
+    border: 5px solid #fff;
+    z-index: 5;
+}
+
+.banner .image-item:nth-child(2) {
+    position: relative;
+    width: 460px;
+    height: 800px;
+    z-index: 10;
+}
+
+.banner .image-item:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    left: -190px;
+    top: -190px;
+    z-index: -3;
+    background-image: url(/assets/images/hoa2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 212px !important;
+    height: 262px !important;
+}
+
+.banner .image-item:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    right: -217px;
+    bottom: -100px;
+    z-index: -3;
+    background-image: url(/assets/images/hoa1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 212px !important;
+    height: 262px !important;
+    transform: rotate(85deg);
+}
+
+.banner .image-item:nth-child(1) {
+    position: relative;
+    left: 100px;
+}
+
+.banner .image-item:nth-child(3) {
+    position: relative;
+    right: 100px;
+}
+
+.banner .image-item:hover {
+    transform: translate(0, -10px);
+    transition-duration: 500ms;
+    transition-property: transform;
+}
+
+.banner .image-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    margin-top: 50px;
+    width: 100%;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Dancing Script', sans-serif;
+}
+
+.mail {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    margin-top: 50px;
+    background-image: url(/assets/images/bg_mail.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mail p {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Dancing Script', sans-serif;
+    animation-name: tada;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes tada {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) scale3d(1, 1, 1);
+    }
+
+    10%,
+    20% {
+        transform: translate(-50%, -50%) scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    }
+
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translate(-50%, -50%) scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+
+    40%,
+    60%,
+    80% {
+        transform: translate(-50%, -50%) scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+}
+
+@keyframes tada2 {
+
+    0%,
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    10%,
+    20% {
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    }
+
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+
+    40%,
+    60%,
+    80% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+}
+
+.chuc {
+    position: relative;
+    width: 884px;
+    height: 530px;
+    margin: 50px auto;
+    padding: 30px 0;
+}
+
+.chuc h2 {
+    display: block;
+    color: #731D5F;
+    font-family: "Dancing Script", Sans-serif;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 600;
+    animation-name: tada2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+.chuc .name {
+    background-color: #731D5F;
+    border-radius: 33px 33px 33px 33px;
+    width: 258px;
+    height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: "Montserrat", Sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.5;
+    margin: 20px auto;
+}
+
+
+.chuc .date {
+    color: #731D5F;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 90px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.chuc .content {
+    text-align: center;
+    color: #731D5F;
+    font-family: "Dancing Script", Sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    width: var(--container-widget-width, 80%);
+    max-width: 80%;
+    --container-widget-width: 80%;
+    --container-widget-flex-grow: 0;
+    margin: 0 auto;
+}
+
+.chuc::before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: -100px;
+    background-image: url(/assets/images/chuc-hoa-before.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    display: block;
+    width: 293px;
+    height: 549px;
+}
+
+.chuc::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -150px;
+    background-image: url(/assets/images/chuc-hoa-after.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    display: block;
+    width: 495px;
+    height: 629px;
+}
+
+.chuc .bg-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transform: rotate(4deg);
+    background-color: #fbfbfb;
+    border-style: solid;
+    border-color: #731D5F;
+}
+
+.chuc .bg-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-color: #731D5F;
+}
