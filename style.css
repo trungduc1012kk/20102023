@@ -49,7 +49,7 @@ img {
     left: -190px;
     top: -190px;
     z-index: -3;
-    background-image: url(/assets/images/hoa2.png);
+    background-image: url(./assets/images/hoa2.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 212px !important;
@@ -62,7 +62,7 @@ img {
     right: -217px;
     bottom: -100px;
     z-index: -3;
-    background-image: url(/assets/images/hoa1.png);
+    background-image: url(./assets/images/hoa1.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 212px !important;
@@ -105,7 +105,7 @@ img {
     width: 100%;
     height: 80px;
     margin-top: 50px;
-    background-image: url(/assets/images/bg_mail.png);
+    background-image: url(./assets/images/bg_mail.png);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -241,7 +241,7 @@ img {
     position: absolute;
     top: 50px;
     left: -100px;
-    background-image: url(/assets/images/chuc-hoa-before.png);
+    background-image: url(./assets/images/chuc-hoa-before.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
@@ -255,7 +255,7 @@ img {
     position: absolute;
     top: 0;
     right: -150px;
-    background-image: url(/assets/images/chuc-hoa-after.png);
+    background-image: url(./assets/images/chuc-hoa-after.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
